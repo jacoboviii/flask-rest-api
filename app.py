@@ -12,10 +12,7 @@ from security import authenticate, identity
 
 app = Flask(__name__)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get(
-    "DATABASE_URL", "mysql+pymysql://jacobo:Bernie!2021@192.168.0.5/FLASK_API"
-)
-
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.secret_key = "ayla"
 api = Api(app)
