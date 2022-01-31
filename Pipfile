@@ -11,6 +11,7 @@ flask-jwt = "*"
 mysql-connector-python = "*"
 flask-sqlalchemy = "*"
 pymysql = "*"
+uwsgi = "*"
 
 [dev-packages]
 
